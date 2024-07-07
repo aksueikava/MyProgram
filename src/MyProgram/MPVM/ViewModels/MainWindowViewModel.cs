@@ -2,9 +2,9 @@
 {
     public class MainWindowViewModel : ViewModelBase
     {
-        private string _title;
+        private string? _title; // Nullable поле
 
-        public string Title
+        public string? Title
         {
             get { return _title; }
             set
