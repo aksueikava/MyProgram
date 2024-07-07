@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>app-icon.ico</ApplicationIcon>
+    <ApplicationManifest>Resources\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Images\close-w-10.png" />
+    <None Remove="Resources\Images\min-w-10.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="app-icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.122" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\close-w-10.png" />
+    <Resource Include="Resources\Images\min-w-10.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MPVM\UserControls\" />
+    <Folder Include="MPVM\Models\" />
+    <Folder Include="MPVM\ViewModels\Pages\" />
+  </ItemGroup>
+
+</Project>
