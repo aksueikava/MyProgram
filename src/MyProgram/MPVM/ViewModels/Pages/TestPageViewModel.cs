@@ -6,7 +6,7 @@ namespace MyProgram.MPVM.ViewModels.Pages
 {
     public class TestPageViewModel : ObservableRecipient
     {
-        private string _pageTitle;
+        private string _pageTitle = string.Empty;
 
         public string PageTitle
         {
@@ -24,8 +24,7 @@ namespace MyProgram.MPVM.ViewModels.Pages
 
         private void NavigateToMainPage()
         {
-            var mainWindowViewModel = App.Current.MainWindow.DataContext as MainWindowViewModel;
-            if (mainWindowViewModel != null)
+            if (App.Current.MainWindow.DataContext is MainWindowViewModel mainWindowViewModel)
             {
                 mainWindowViewModel.CurrentPage = new MainPage();
             }

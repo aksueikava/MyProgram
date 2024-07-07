@@ -16,9 +16,9 @@ namespace MyProgram.MPVM.ViewModels
             }
         }
 
-        private object _currentPage;
+        private object? _currentPage;
 
-        public object CurrentPage
+        public object? CurrentPage
         {
             get { return _currentPage; }
             set
