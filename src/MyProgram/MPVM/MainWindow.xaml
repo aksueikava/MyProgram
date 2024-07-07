@@ -31,7 +31,7 @@
         </Grid.RowDefinitions>
 
         <!-- Главное содержание (Frame для остальных страниц) -->
-        <Frame Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden" Content="{Binding CurrentPage}"/>
+        <Frame Name="MainFrame" Grid.Column="1" Grid.Row="1" NavigationUIVisibility="Hidden" Content="{Binding CurrentPage}"/>
 
         <!-- Слой для лицензии, охватывающий весь Grid -->
         <Border x:Name="LicenseBorder" Background="#80000000" Visibility="Visible" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2">
